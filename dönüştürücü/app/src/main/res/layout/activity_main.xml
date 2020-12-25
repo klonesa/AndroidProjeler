@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonAlan"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/rakam_button"
+        android:text="alan"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonZaman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonSicaklik"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgirlik" />
+
+    <Button
+        android:id="@+id/buttonUzunluk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/rakam_button"
+        android:text="Uzunluk"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSicaklik"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAgirlik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAgirlik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/sade_button"
+        android:text="ağırlık"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonUzunluk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHiz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/rakam_button"
+        android:text="hız"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonZaman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSicaklik" />
+
+    <Button
+        android:id="@+id/buttonZaman"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/sade_button"
+        android:text="zaman"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonHiz"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAlan" />
+
+    <Button
+        android:id="@+id/buttonSicaklik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/sade_button"
+        android:text="Sıcaklık"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHiz"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAlan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUzunluk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8324615B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="379dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/duzen"
+        android:gravity="center"
+        android:text="Giriş Ekranı"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPlaka"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/duzen"
+        android:drawableLeft="@drawable/ic_baseline_arrow_right_24"
+        android:elevation="100dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="plaka girin"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonGiris"
+        android:layout_width="169dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/button_corner"
+        android:text="giriş"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPlaka"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPlaka" />
+
+    <Button
+        android:id="@+id/buttonArsiv"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/button_corner"
+        android:text="arşiv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGiris"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGiris" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
